@@ -15,7 +15,11 @@ ZSH_THEME="bullet-train/bullet-train"
 
 COMPLETION_WAITING_DOTS="true"
 
-plugins=(git findtext)
+plugins=(
+	git
+	findtext
+	mkcd
+)
 
 source $ZSH/oh-my-zsh.sh
 
