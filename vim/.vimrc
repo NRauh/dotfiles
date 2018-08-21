@@ -1,5 +1,18 @@
-" Enable pathogen
-execute pathogen#infect()
+" Vundle stuff
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-surround'
+
+call vundle#end()
+filetype plugin indent on
+
+
+
 
 " Make .swp files go in /tmp
 set directory=/tmp//
