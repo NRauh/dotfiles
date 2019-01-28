@@ -12,8 +12,6 @@ call vundle#end()
 filetype plugin indent on
 
 
-
-
 " Make .swp files go in /tmp
 set directory=/tmp//
 
@@ -51,6 +49,9 @@ set ruler
 
 " Display line numbers on the left
 set number
+
+" Shortcuts
+imap jk <Esc>
 
 " Set weird colors
 au BufRead,BufNewFile *.twig set filetype=html
