@@ -7,6 +7,8 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-commentary'
+Plugin 'vim-ruby/vim-ruby'
 
 call vundle#end()
 filetype plugin indent on
@@ -16,7 +18,7 @@ filetype plugin indent on
 set directory=/tmp//
 
 " Sets directory automatically
-set autochdir
+" set autochdir
 
 " Sets scrolling and clicking around
 set mouse=a
@@ -49,6 +51,9 @@ set ruler
 
 " Display line numbers on the left
 set number
+
+" New line at end of file
+set eol
 
 " Shortcuts
 imap jk <Esc>
