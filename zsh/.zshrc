@@ -25,6 +25,7 @@ plugins=(
 	git
 	findtext
 	mkcd
+	zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
