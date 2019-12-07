@@ -26,3 +26,8 @@ myself for what to install on a fresh system.
 * nvm & yarn
 * borg
 * vscode & settings
+
+# Useful programs for Mac
+
+* [Sensible Side Buttons](https://sensible-side-buttons.archagon.net/)
+* [Scroll Reverser](https://pilotmoon.com/scrollreverser/)
