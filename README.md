@@ -21,6 +21,10 @@ iTerm 2 settings can be applied by changing the settings directory
 
 Here's a list of programs I commonly will install.
 
+## VSCode
+
+[This gist](https://gist.github.com/NRauh/dfc127a60242d9b110ca355cbb0440f0) can be used with the [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) plugin.
+
 ## CLI
 
 - [`brew`](https://brew.sh/)
