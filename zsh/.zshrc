@@ -8,6 +8,7 @@ export EDITOR="$VISUAL"
 antigen bundle git
 
 antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle walesmd/caniuse.plugin.zsh
 
 BULLETTRAIN_PROMPT_ORDER=(
 	time
