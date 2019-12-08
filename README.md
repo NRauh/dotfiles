@@ -1,33 +1,36 @@
-Dotfiles
-========
+# Dotfiles
 
-Use `stow` on the directory with dotfiles you want to use.
+Use `stow` on the directory with dotfiles you want to use (except `terminal-presets`).
 
-For `zsh`, run: `cp ~/.zshrc-local.rename ~/.zshrc-local`
+## Zsh
 
-For `vim`, be sure to install [Vundle](https://github.com/VundleVim/Vundle.vim).
+* Install [antigen](https://github.com/zsh-users/antigen) to `~/.antigen.zsh`
+* After running `stow`, run `cp ~/.zshrc-local.rename ~/.zshrc-local`
+* Install [powerline fonts](https://github.com/powerline/fonts)
 
-Install [bullet train](https://github.com/caiogondim/bullet-train.zsh) theme. Install [powerline fonts](https://github.com/powerline/fonts) if using bullet train theme.
+## Vim
 
-Programs Installed
-==================
+* Install [Vundle](https://github.com/VundleVim/Vundle.vim).
 
-This is a list of the programs I have installed.
+## Terminal Presets
 
-In some cases these need to be installed for the config files to work
-as intended (afaik they won't break), in others they're just notes to
-myself for what to install on a fresh system.
+iTerm 2 settings can be applied by changing the settings directory
+(General -> Preferences -> Load preferences from a custom folder or URL).
 
-* fonts-powerline
-* zsh
-* git
-* oh-my-zsh
-* bullettrain theme
-* nvm & yarn
-* borg
-* vscode & settings
+# Programs
 
-# Useful programs for Mac
+Here's a list of programs I commonly will install.
+
+## CLI
+
+- [`brew`](https://brew.sh/)
+- [`n`](https://github.com/tj/n)
+  - This can be installed with `brew`
+- [`rvm`](https://rvm.io/)
+
+## Mac
+
+These are a few smaller programs that I think help make Mac programming more comfortable.
 
 * [Sensible Side Buttons](https://sensible-side-buttons.archagon.net/)
 * [Scroll Reverser](https://pilotmoon.com/scrollreverser/)
