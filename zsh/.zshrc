@@ -6,6 +6,7 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 
 antigen bundle git
+antigen bundle docker-compose
 
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle walesmd/caniuse.plugin.zsh
@@ -28,6 +29,6 @@ antigen apply
 
 source $HOME/.zshrc-local
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+. /usr/local/opt/asdf/asdf.sh
 
+. /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
