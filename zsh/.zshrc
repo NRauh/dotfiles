@@ -29,6 +29,7 @@ antigen apply
 
 source $HOME/.zshrc-local
 
-. /usr/local/opt/asdf/asdf.sh
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
 
-. /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
+. /usr/local/opt/asdf/asdf.sh
