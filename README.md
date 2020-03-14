@@ -10,9 +10,11 @@ Have [nerd-fonts](https://github.com/ryanoasis/nerd-fonts) installed.
 * After running `stow`, run `cp ~/.zshrc-local.rename ~/.zshrc-local`
 * Install [powerline fonts](https://github.com/powerline/fonts)
 
-## Vim
+## nvim
 
-* Install [Vundle](https://github.com/VundleVim/Vundle.vim).
+* Install [Dein](https://github.com/Shougo/dein.vim).
+	* Run `stow vim`
+* Link `~/.vimrc` to nvim config (`~/.config/nvim/init.vim`)
 
 ## Terminal Presets
 
