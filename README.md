@@ -2,6 +2,8 @@
 
 Use `stow` on the directory with dotfiles you want to use (except `terminal-presets`).
 
+Have [nerd-fonts](https://github.com/ryanoasis/nerd-fonts) installed.
+
 ## Zsh
 
 * Install [antigen](https://github.com/zsh-users/antigen) to `~/.antigen.zsh`
