@@ -3,11 +3,11 @@ if &compatible
 endif
 
 " Add the dein installation directory into runtimepath
-set runtimepath+=/Users/teganr/.cache/dein/repos/github.com/Shougo/dein.vim
+set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
 
-if dein#load_state('/Users/teganr/.cache/dein')
-  call dein#begin('/Users/teganr/.cache/dein')
-  call dein#add('/Users/teganr/.cache/dein/repos/github.com/Shougo/dein.vim')
+if dein#load_state('~/.cache/dein')
+  call dein#begin('~/.cache/dein')
+  call dein#add('~/.cache/dein/repos/github.com/Shougo/dein.vim')
 
   call dein#add('jiangmiao/auto-pairs')
   call dein#add('tpope/vim-surround')
