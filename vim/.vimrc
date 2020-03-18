@@ -18,6 +18,10 @@ if dein#load_state('~/.cache/dein')
 	call dein#add('vim-airline/vim-airline')
 	call dein#add('ctrlpvim/ctrlp.vim')
 	call dein#add('tiagofumo/vim-nerdtree-syntax-highlight')
+	call dein#add('editorconfig/editorconfig-vim')
+	call dein#add('Yggdroot/indentLine')
+	call dein#add('andymass/vim-matchup')
+	call dein#add('airblade/vim-gitgutter')
 
 	call dein#add('ryanoasis/vim-devicons')
 
@@ -34,6 +38,12 @@ if dein#check_install()
 endif
 
 set encoding=utf8
+
+highlight GitGutterAdd    guifg=#009900 guibg=<X> ctermfg=2
+highlight GitGutterChange guifg=#bbbb00 guibg=<X> ctermfg=3
+highlight GitGutterDelete guifg=#ff2222 guibg=<X> ctermfg=1
+
+let g:indentLine_char = '¦'
 
 " vim-airline settings
 " Enable the list of buffers
