@@ -43,6 +43,8 @@ highlight GitGutterAdd    guifg=#009900 guibg=<X> ctermfg=2
 highlight GitGutterChange guifg=#bbbb00 guibg=<X> ctermfg=3
 highlight GitGutterDelete guifg=#ff2222 guibg=<X> ctermfg=1
 
+let g:coc_global_extensions = ['coc-tsserver', 'coc-html', 'coc-json']
+
 let g:indentLine_char = '¦'
 
 " vim-airline settings
