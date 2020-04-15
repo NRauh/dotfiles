@@ -14,6 +14,7 @@ if dein#load_state('~/.cache/dein')
 	call dein#add('airblade/vim-gitgutter')
 	call dein#add('andymass/vim-matchup')
 	call dein#add('ctrlpvim/ctrlp.vim')
+	call dein#add('dense-analysis/ale')
 	call dein#add('editorconfig/editorconfig-vim')
 	call dein#add('neoclide/coc.nvim', {'merged':0, 'rev': 'release'})
 	call dein#add('preservim/nerdtree')
@@ -22,6 +23,7 @@ if dein#load_state('~/.cache/dein')
   call dein#add('jiangmiao/auto-pairs')
   call dein#add('tpope/vim-commentary')
   call dein#add('tpope/vim-surround')
+  call dein#add('vim-airline/vim-airline-themes')
   call dein#add('vim-ruby/vim-ruby')
 
 	call dein#add('ryanoasis/vim-devicons') " This apparently needs to be last?
@@ -42,9 +44,11 @@ highlight GitGutterAdd    guifg=#009900 guibg=<X> ctermfg=2
 highlight GitGutterChange guifg=#bbbb00 guibg=<X> ctermfg=3
 highlight GitGutterDelete guifg=#ff2222 guibg=<X> ctermfg=1
 
-let g:coc_global_extensions = ['coc-tsserver', 'coc-html', 'coc-json']
+let g:coc_global_extensions = ['coc-tsserver', 'coc-html', 'coc-json', 'coc-solargraph']
 
 let g:indentLine_char = '¦'
+
+let g:airline_theme='bubblegum'
 
 " vim-airline settings
 " Enable the list of buffers
@@ -79,9 +83,10 @@ set smartcase
 set backspace=indent,eol,start
 
 " When opening a new line and no filetype-specific indenting is enabled, keep the same indent as the line you're currently on
-set autoindent
+" set autoindent
 
 " Indetation settings
+set expandtab
 set shiftwidth=2
 set tabstop=2
 

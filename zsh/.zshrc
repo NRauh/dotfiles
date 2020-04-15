@@ -2,7 +2,7 @@ source "$HOME/.antigen.zsh"
 
 antigen use oh-my-zsh
 
-export VISUAL=vim
+export VISUAL=nvim
 export EDITOR="$VISUAL"
 
 antigen bundle git
