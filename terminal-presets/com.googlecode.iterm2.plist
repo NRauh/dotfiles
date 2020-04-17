@@ -16,6 +16,22 @@
 	<integer>1</integer>
 	<key>AppleWindowTabbingMode</key>
 	<string>manual</string>
+	<key>Coprocess MRU</key>
+	<array>
+		<string>~/.iterm-open.sh /Users/teganr/Projects/ABI-Shuttle-Tracker-2017/README.md </string>
+		<string>~/.iterm-open.sh /Users/teganr/Projects/bedford-ecommerce-rails/app/models/bedford_store/spree/stock_location_decorator.rb 2</string>
+		<string>~/.iterm-open.sh /Users/teganr/Projects/bedford-ecommerce-rails/README.md </string>
+		<string>~/.iterm-open.sh /Users/teganr/Projects/bedford-ecommerce-rails/app/models/bedford_store/spree/stock_location_decorator.rb </string>
+		<string>~/.iterm-open.sh /Users/teganr/Projects/bedford-ecommerce-rails/app/models/shipment_skid.rb </string>
+		<string>~/.iterm-open.sh /Users/teganr/Projects/bedford-ecommerce-rails/db/migrate/20200415195134_create_shipment_skids.rb </string>
+		<string>~/.iterm-open.sh /Users/teganr/Projects/bedford-ecommerce-rails/db/migrate/20200415194750_create_shipment_skids.rb </string>
+		<string>~/.iterm-open.sh /Users/teganr/.rvm/gems/ruby-2.6.5@bedford-ecommerce/gems/spree_core-4.1.5/app/models/spree/preferences/store.rb 9</string>
+		<string>~/.iterm-open.sh /Users/teganr/Projects/bedford-ecommerce-rails/spec/models/bedford_store/spree/stock/package_decorator_spec.rb 42</string>
+		<string>echo open  /Users/teganr/Projects/bedford-ecommerce-rails/spec/models/bedford_store/spree/stock/package_decorator_spec.rb -a rubymine</string>
+		<string>echo open  /Users/teganr/Projects/bedford-ecommerce-rails/spec/models/bedford_store/spree/stock/package_decorator_spec.rb + -a rubymine</string>
+		<string>echo nvim /Users/teganr/Projects/bedford-ecommerce-rails/spec/models/bedford_store/spree/stock/package_decorator_spec.rb +</string>
+		<string>echo /Users/teganr/Projects/bedford-ecommerce-rails/spec/models/bedford_store/spree/stock/package_decorator_spec.rb +</string>
+	</array>
 	<key>CopyLastNewline</key>
 	<false/>
 	<key>Custom Color Presets</key>
@@ -50919,7 +50935,7 @@
 	dWxs0g0ODxJaTlMub2JqZWN0c1YkY2xhc3OiEBGAAoAKgA3TFA0OFRkdV05TLmtleXOj
 	FhcYgAOABIAFoxobHIAGgAeACIAJWklkZW50aWZpZXJVV2lkdGhWSGlkZGVuUTAjQGjA
 	AAAAAAAI0iUmJyhaJGNsYXNzbmFtZVgkY2xhc3Nlc1xOU0RpY3Rpb25hcnmiJylYTlNP
-	YmplY3TTFA0OKy8doxYXGIADgASABaMwMRyAC4AMgAiACVExI0B0oZ2yLQ5W0iUmNzhe
+	YmplY3TTFA0OKy8doxYXGIADgASABaMwMRyAC4AMgAiACVExI0BzsZ2yLQ5W0iUmNzhe
 	TlNNdXRhYmxlQXJyYXmjNzkpV05TQXJyYXkACAARABoAJAApADIANwBJAEwAUgBUAGMA
 	aQBuAHkAgACDAIUAhwCJAJAAmACcAJ4AoACiAKYAqACqAKwArgC5AL8AxgDIANEA0gDX
 	AOIA6wD4APsBBAELAQ8BEQETARUBGQEbAR0BHwEhASMBLAExAUABRAAAAAAAAAIBAAAA
@@ -50953,9 +50969,9 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>545 575 918 452 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>2398 215 1060 842 1920 0 1920 1200 </string>
+	<string>2097 261 1054 792 1920 180 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>202 183 1481 874 0 0 1920 1080 </string>
+	<string>1920 276 1075 776 1920 180 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>0 736 585 427 0 0 1920 1177 </string>
 	<key>NeverWarnAboutShortLivedSessions_1AD95287-1531-4A03-AE05-B2279AB0E53D</key>
@@ -52936,6 +52952,15 @@
 				<key>Red Component</key>
 				<real>0.37647062540054321</real>
 			</dict>
+			<key>Semantic History</key>
+			<dict>
+				<key>action</key>
+				<string>coprocess</string>
+				<key>editor</key>
+				<string>com.github.atom</string>
+				<key>text</key>
+				<string>~/.iterm-open.sh \1 \2</string>
+			</dict>
 			<key>Send Code When Idle</key>
 			<false/>
 			<key>Shortcut</key>
@@ -52998,9 +53023,9 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{1920, 0}, {1920, 1200}}</string>
+		<string>{{0, 0}, {1920, 1080}}</string>
 		<key>topLeft</key>
-		<string>{2123, 752}</string>
+		<string>{387, 919}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
@@ -53009,7 +53034,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>EB004291-51D8-4C36-8659-BE8DA111AF0C</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>153</integer>
+	<integer>177</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
 	<real>586793153.32228196</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
@@ -53791,7 +53816,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-03-13T14:17:49Z</date>
+	<date>2020-04-16T14:00:31Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>
@@ -53799,7 +53824,7 @@
 	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<true/>
+	<false/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
