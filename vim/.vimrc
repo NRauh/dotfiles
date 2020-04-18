@@ -21,11 +21,11 @@ if dein#load_state('~/.cache/dein')
 	call dein#add('tiagofumo/vim-nerdtree-syntax-highlight')
 	call dein#add('vim-airline/vim-airline')
   call dein#add('jiangmiao/auto-pairs')
+  call dein#add('mattn/emmet-vim')
   call dein#add('tpope/vim-commentary')
   call dein#add('tpope/vim-surround')
   call dein#add('vim-airline/vim-airline-themes')
   call dein#add('vim-ruby/vim-ruby')
-  call dein#add('mattn/emmet-vim')
 
 	call dein#add('ryanoasis/vim-devicons') " This apparently needs to be last?
 
