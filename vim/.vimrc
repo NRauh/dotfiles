@@ -25,6 +25,7 @@ if dein#load_state('~/.cache/dein')
   call dein#add('tpope/vim-surround')
   call dein#add('vim-airline/vim-airline-themes')
   call dein#add('vim-ruby/vim-ruby')
+  call dein#add('mattn/emmet-vim')
 
 	call dein#add('ryanoasis/vim-devicons') " This apparently needs to be last?
 
@@ -59,6 +60,8 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 
 let g:airline_powerline_fonts = 1
 
+" make search clear by double escape
+nnoremap <esc><esc> :noh<return>
 
 " Open NERDTree shortcut
 map <C-o> :NERDTreeToggle<CR>
@@ -95,6 +98,7 @@ set foldmethod=indent
 set foldnestmax=10
 set nofoldenable
 set foldlevel=1
+set softtabstop=2
 
 " Display the curso position on the last line of the screen or in the status line of a window
 set ruler
