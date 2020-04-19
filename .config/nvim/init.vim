@@ -38,68 +38,21 @@ endif
 unlet plug_install
 
 
+" =============
+" Base Settings
+" =============
+
+" File settings
 filetype plugin indent on
-
 set encoding=utf8
-
-highlight GitGutterAdd    guifg=#009900 guibg=<X> ctermfg=2
-highlight GitGutterChange guifg=#bbbb00 guibg=<X> ctermfg=3
-highlight GitGutterDelete guifg=#ff2222 guibg=<X> ctermfg=1
-
-let g:coc_global_extensions = ['coc-tsserver', 'coc-html', 'coc-solargraph', 'coc-python', 'coc-elixir']
-
-let g:indentLine_char = '¦'
-
-let g:airline_theme='bubblegum'
-
-" vim-airline settings
-" Enable the list of buffers
-let g:airline#extensions#tabline#enabled = 1
-
-" Show just the filename
-let g:airline#extensions#tabline#fnamemod = ':t'
-
-let g:airline_powerline_fonts = 1
-
-" make search clear by double escape
-nnoremap <esc><esc> :noh<return>
-
-" Open NERDTree shortcut
-map <C-o> :NERDTreeToggle<CR>
-
-" Map buffer navigation commands
-map gn :bn<cr>
-map gp :bp<cr>
-
-" Make nerdtree not turn to shit when closing a buffer
-nnoremap <leader>w :bp<cr>:bd #<cr>
-
-" Make .swp files go in /tmp
-set directory=/tmp//
-
-" Sets directory automatically
-" set autochdir
-
-" Sets scrolling and clicking around
-set mouse=a
-
-" Show partial commands in the last line of the screen
-set showcmd
-
-" Use case insensitive sear, except when using capital letters
-set ignorecase
-set smartcase
-
-" Allow backspacing over autoindent, line breaks and start of insert action
-set backspace=indent,eol,start
-
-" When opening a new line and no filetype-specific indenting is enabled, keep the same indent as the line you're currently on
-" set autoindent
+set eol
 
 " Indetation settings
 set expandtab
 set shiftwidth=2
 set tabstop=2
+
+set showcmd
 
 " Code folding settings
 set foldmethod=indent
@@ -108,25 +61,107 @@ set nofoldenable
 set foldlevel=1
 set softtabstop=2
 
-" Display the curso position on the last line of the screen or in the status line of a window
-set ruler
-
 " Display line numbers on the left
 set number
 
-" New line at end of file
-set eol
+" Sets directory automatically
+" set autochdir
 
-" Set weird colors
-au BufRead,BufNewFile *.twig set filetype=html
+" Make .swp files go in /tmp
+set directory=/tmp//
 
-" Setup theme
+" Use case insensitive search, except when using capital letters
+set ignorecase
+set smartcase
+
+" Allow backspacing over autoindent, line breaks and start of insert action
+set backspace=indent,eol,start
+
+set mouse=a
+
+" Map buffer navigation commands
+nmap gn :bn<cr>
+nmap gp :bp<cr>
+nnoremap <leader>w :bp<cr>:bd #<cr>
+
+" make search clear by double escape
+nnoremap <esc><esc> :noh<return>
+
+
+" ==============
+" Theme Settings
+" ==============
+
 syntax enable
 set background=light
 " set guifont=Source\ Code\ Pro\ Light:h11
 set guifont=RobotoMono\ Nerd\ Font:h11
 
-" coc.nvim settings
+
+" ==================
+" GitGutter Settings
+" ==================
+
+highlight GitGutterAdd    guifg=#009900 guibg=<X> ctermfg=2
+highlight GitGutterChange guifg=#bbbb00 guibg=<X> ctermfg=3
+highlight GitGutterDelete guifg=#ff2222 guibg=<X> ctermfg=1
+
+
+" ===================
+" IndentLine Settings
+" ===================
+
+autocmd Filetype json let g:indentLine_enabled = 0
+let g:indentLine_char = '¦'
+
+
+" ================
+" Airline Settings
+" ================
+
+let g:airline_theme='bubblegum'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
+let g:airline_powerline_fonts = 1
+
+
+" =================
+" NERDTree Settings
+" =================
+
+map <C-o> :NERDTreeToggle<CR>
+
+" Color highlight for devicons
+function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
+ exec 'autocmd FileType nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
+ exec 'autocmd FileType nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
+endfunction
+
+call NERDTreeHighlightFile('jade', 'green', 'none', 'green', '#151515')
+call NERDTreeHighlightFile('ini', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('md', 'blue', 'none', '#3366FF', '#151515')
+call NERDTreeHighlightFile('yml', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('config', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('conf', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('json', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('html', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('styl', 'cyan', 'none', 'cyan', '#151515')
+call NERDTreeHighlightFile('css', 'cyan', 'none', 'cyan', '#151515')
+call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#151515')
+call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
+call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
+call NERDTreeHighlightFile('ds_store', 'Gray', 'none', '#686868', '#151515')
+call NERDTreeHighlightFile('gitconfig', 'Gray', 'none', '#686868', '#151515')
+call NERDTreeHighlightFile('gitignore', 'Gray', 'none', '#686868', '#151515')
+call NERDTreeHighlightFile('bashrc', 'Gray', 'none', '#686868', '#151515')
+call NERDTreeHighlightFile('bashprofile', 'Gray', 'none', '#686868', '#151515')
+
+
+" =================
+" Coc.nvim Settings
+" =================
+let g:coc_global_extensions = ['coc-elixir', 'coc-html', 'coc-python', 'coc-solargraph', 'coc-tsserver']
+
 set hidden
 set nobackup
 set nowritebackup
@@ -254,30 +289,3 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
-
-
-" Color highlight for devicons
-" NERDTrees File highlighting
-function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
- exec 'autocmd FileType nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
- exec 'autocmd FileType nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
-endfunction
-
-call NERDTreeHighlightFile('jade', 'green', 'none', 'green', '#151515')
-call NERDTreeHighlightFile('ini', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('md', 'blue', 'none', '#3366FF', '#151515')
-call NERDTreeHighlightFile('yml', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('config', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('conf', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('json', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('html', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('styl', 'cyan', 'none', 'cyan', '#151515')
-call NERDTreeHighlightFile('css', 'cyan', 'none', 'cyan', '#151515')
-call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#151515')
-call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
-call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
-call NERDTreeHighlightFile('ds_store', 'Gray', 'none', '#686868', '#151515')
-call NERDTreeHighlightFile('gitconfig', 'Gray', 'none', '#686868', '#151515')
-call NERDTreeHighlightFile('gitignore', 'Gray', 'none', '#686868', '#151515')
-call NERDTreeHighlightFile('bashrc', 'Gray', 'none', '#686868', '#151515')
-call NERDTreeHighlightFile('bashprofile', 'Gray', 'none', '#686868', '#151515')
