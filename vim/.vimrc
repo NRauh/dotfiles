@@ -10,7 +10,7 @@ if dein#load_state('~/.cache/dein')
   call dein#add('~/.cache/dein/repos/github.com/Shougo/dein.vim')
 
 	call dein#add('Xuyuanp/nerdtree-git-plugin')
-	call dein#add('Yggdroot/indentLine')
+	" call dein#add('Yggdroot/indentLine')
 	call dein#add('airblade/vim-gitgutter')
 	call dein#add('andymass/vim-matchup')
 	call dein#add('ctrlpvim/ctrlp.vim')
@@ -45,7 +45,7 @@ highlight GitGutterAdd    guifg=#009900 guibg=<X> ctermfg=2
 highlight GitGutterChange guifg=#bbbb00 guibg=<X> ctermfg=3
 highlight GitGutterDelete guifg=#ff2222 guibg=<X> ctermfg=1
 
-let g:coc_global_extensions = ['coc-tsserver', 'coc-html', 'coc-json', 'coc-solargraph']
+let g:coc_global_extensions = ['coc-tsserver', 'coc-html', 'coc-solargraph', 'coc-python', 'coc-elixir']
 
 let g:indentLine_char = '¦'
 
@@ -65,6 +65,13 @@ nnoremap <esc><esc> :noh<return>
 
 " Open NERDTree shortcut
 map <C-o> :NERDTreeToggle<CR>
+
+" Map buffer navigation commands
+map gn :bn<cr>
+map gp :bp<cr>
+
+" Make nerdtree not turn to shit when closing a buffer
+nnoremap <leader>w :bp<cr>:bd #<cr>
 
 " Make .swp files go in /tmp
 set directory=/tmp//
