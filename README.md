@@ -1,22 +1,20 @@
 # Dotfiles
 
-Use `stow` on the directory with dotfiles you want to use (except `terminal-presets`).
+## Setup
 
 Have [nerd-fonts](https://github.com/ryanoasis/nerd-fonts) installed.
 
-## Zsh
+For zsh, install [antigen](https://github.com/zsh-users/antigen) to `~/.antigen.zsh`
 
-* Install [antigen](https://github.com/zsh-users/antigen) to `~/.antigen.zsh`
-* After running `stow`, run `cp ~/.zshrc-local.rename ~/.zshrc-local`
-* Install [powerline fonts](https://github.com/powerline/fonts)
+## Loading dotfiles
 
-## nvim
+Install `stow` and run `stow -S stow` from this directory
 
-* Install [Dein](https://github.com/Shougo/dein.vim).
-	* Run `stow vim`
-* Link `~/.vimrc` to nvim config (`~/.config/nvim/init.vim`)
+### Post stow
 
-## Terminal Presets
+Run `cp ~/.zshrc-local.rename ~/.zshrc-local`
+
+# Terminal Presets
 
 iTerm 2 settings can be applied by changing the settings directory
 (General -> Preferences -> Load preferences from a custom folder or URL).
@@ -27,7 +25,7 @@ Here's a list of programs I commonly will install.
 
 ## VSCode
 
-[This gist](https://gist.github.com/NRauh/dfc127a60242d9b110ca355cbb0440f0) can be used with the [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) plugin.
+[This gist](https://gist.github.com/tegandbiscuits/dfc127a60242d9b110ca355cbb0440f0) can be used with the [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) plugin.
 
 ## CLI
 
