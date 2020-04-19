@@ -28,8 +28,3 @@ antigen apply
 # Load private settings
 
 source $HOME/.zshrc-local
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-
-. /usr/local/opt/asdf/asdf.sh
