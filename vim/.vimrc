@@ -1,43 +1,44 @@
-if &compatible
-  set nocompatible
+" Install VimPlug automatically
+let plug_install = 0
+if !filereadable(stdpath('config') . '/autoload/plug.vim')
+    silent exe '!curl -fL --create-dirs -o ' . autoload_plug_path . 
+        \ ' https://raw.github.com/junegunn/vim-plug/master/plug.vim'
+    execute 'source ' . fnameescape(autoload_plug_path)
+    let plug_install = 1
 endif
 
-" Add the dein installation directory into runtimepath
-set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
+call plug#begin(stdpath('data') . '/plugged')
 
-if dein#load_state('~/.cache/dein')
-  call dein#begin('~/.cache/dein')
-  call dein#add('~/.cache/dein/repos/github.com/Shougo/dein.vim')
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'Yggdroot/indentLine'
+Plug 'airblade/vim-gitgutter'
+Plug 'andymass/vim-matchup'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'dense-analysis/ale'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'jiangmiao/auto-pairs'
+Plug 'mattn/emmet-vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'preservim/nerdtree'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'vim-ruby/vim-ruby'
 
-	call dein#add('Xuyuanp/nerdtree-git-plugin')
-	" call dein#add('Yggdroot/indentLine')
-	call dein#add('airblade/vim-gitgutter')
-	call dein#add('andymass/vim-matchup')
-	call dein#add('ctrlpvim/ctrlp.vim')
-	call dein#add('dense-analysis/ale')
-	call dein#add('editorconfig/editorconfig-vim')
-	call dein#add('neoclide/coc.nvim', {'merged':0, 'rev': 'release'})
-	call dein#add('preservim/nerdtree')
-	call dein#add('tiagofumo/vim-nerdtree-syntax-highlight')
-	call dein#add('vim-airline/vim-airline')
-  call dein#add('jiangmiao/auto-pairs')
-  call dein#add('mattn/emmet-vim')
-  call dein#add('tpope/vim-commentary')
-  call dein#add('tpope/vim-surround')
-  call dein#add('vim-airline/vim-airline-themes')
-  call dein#add('vim-ruby/vim-ruby')
+Plug 'ryanoasis/vim-devicons' " This apparently needs to be last?
 
-	call dein#add('ryanoasis/vim-devicons') " This apparently needs to be last?
+call plug#end()
 
-  call dein#end()
-  call dein#save_state()
+" Install plugins for fresh install
+if plug_install
+  PlugInstall --sync
 endif
+unlet plug_install
+
 
 filetype plugin indent on
-
-if dein#check_install()
-	call dein#install()
-endif
 
 set encoding=utf8
 
