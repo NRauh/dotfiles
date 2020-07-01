@@ -28,8 +28,8 @@ ZSH_AUTOSUGGEST_USE_ASYNC=1
 antigen theme caiogondim/bullet-train.zsh
 antigen apply
 
-bindkey "$terminfo[kcuf1]" history-substring-search-up # right
-bindkey "$terminfo[kcub1]" history-substring-search-down # left
+# bindkey "$terminfo[kcuf1]" history-substring-search-up # right
+# bindkey "$terminfo[kcub1]" history-substring-search-down # left
 
 # Load private settings
 
