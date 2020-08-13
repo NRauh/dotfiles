@@ -11,6 +11,7 @@ antigen bundle docker-compose
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle walesmd/caniuse.plugin.zsh
 antigen bundle zsh-users/zsh-history-substring-search
+antigen bundle paulirish/git-open
 # antigen bundle zsh-users/zsh-syntax-highlighting
 
 BULLETTRAIN_PROMPT_ORDER=(
@@ -34,3 +35,5 @@ antigen apply
 # Load private settings
 
 source $HOME/.zshrc-local
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
