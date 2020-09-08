@@ -1,2 +1,6 @@
 ./zsh/.zshrc-local.rename
 .DS_Store
+**/node_modules
+stow/.config/configstore
+stow/.config/nvim/autoload
+
