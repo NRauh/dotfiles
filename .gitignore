@@ -3,4 +3,5 @@
 **/node_modules
 stow/.config/configstore
 stow/.config/nvim/autoload
+stow/.config/gh
 
