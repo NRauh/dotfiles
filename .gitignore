@@ -4,4 +4,5 @@
 stow/.config/configstore
 stow/.config/nvim/autoload
 stow/.config/gh
+stow/.config/stup.conf
 
