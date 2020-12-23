@@ -32,11 +32,15 @@ antigen apply
 # bindkey "$terminfo[kcuf1]" history-substring-search-up # right
 # bindkey "$terminfo[kcub1]" history-substring-search-down # left
 
+alias oc="overmind connect"
+alias or="overmind restart"
+alias os="overmind start"
+
 # Load private settings
 
 source $HOME/.zshrc-local
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
