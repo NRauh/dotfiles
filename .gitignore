@@ -1,8 +1,8 @@
 ./zsh/.zshrc-local.rename
 .DS_Store
 **/node_modules
-stow/.config/configstore
+stow/.config/*
+!stow/.config/coc
+!stow/.config/nvim
 stow/.config/nvim/autoload
-stow/.config/gh
-stow/.config/stup.conf
-
+!stow/.config/ranger
