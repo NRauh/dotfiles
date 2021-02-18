@@ -3,6 +3,7 @@
 ## Setup
 
 Have [nerd-fonts](https://github.com/ryanoasis/nerd-fonts) installed.
+(Terminal preset uses MesloLGMDZ Nerd Font)
 
 For zsh, install [antigen](https://github.com/zsh-users/antigen) to `~/.antigen.zsh`
 
