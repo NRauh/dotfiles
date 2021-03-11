@@ -5,8 +5,9 @@ antigen use oh-my-zsh
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 
-antigen bundle git
+antigen bundle bundler
 antigen bundle docker-compose
+antigen bundle git
 
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle walesmd/caniuse.plugin.zsh
