@@ -1,9 +1,9 @@
 {
   "dependencies": {
-    "coc-elixir": ">=0.5.0",
-    "coc-html": ">=1.2.4",
-    "coc-python": ">=1.2.12",
-    "coc-solargraph": ">=1.1.6",
-    "coc-tsserver": ">=1.5.5"
+    "coc-elixir": ">=0.6.4",
+    "coc-html": ">=1.4.1",
+    "coc-python": ">=1.2.13",
+    "coc-solargraph": ">=1.2.0",
+    "coc-tsserver": ">=1.6.8"
   }
 }

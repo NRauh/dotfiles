@@ -2,7 +2,7 @@
 .DS_Store
 **/node_modules
 stow/.config/*
-!stow/.config/coc
+!stow/.config/coc/extensions/package.json
 !stow/.config/nvim
 stow/.config/nvim/autoload
 !stow/.config/ranger
