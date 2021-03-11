@@ -25,6 +25,7 @@ BULLETTRAIN_DIR_EXTENDED=0
 
 COMPLETION_WAITING_DOTS="true"
 ZSH_AUTOSUGGEST_USE_ASYNC=1
+HOMEBREW_NO_INSTALL_CLEANUP=1
 
 antigen theme caiogondim/bullet-train.zsh
 antigen apply
