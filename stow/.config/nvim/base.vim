@@ -49,4 +49,5 @@ nnoremap <leader>w :bp<cr>:bd #<cr>
 
 " make search clear by double escape
 nnoremap <esc><esc> :noh<return>
- 
+
+set scrolloff=4

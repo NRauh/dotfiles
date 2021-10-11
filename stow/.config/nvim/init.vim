@@ -51,3 +51,5 @@ if !exists('g:vscode')
   source ~/.config/nvim/nerdtree.vim
   source ~/.config/nvim/coc.vim
 end
+
+set conceallevel=0
